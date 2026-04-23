@@ -14,7 +14,6 @@ export default function Navbar({ onMenuClick }) {
         className="icon-btn mobile-menu-btn"
         onClick={onMenuClick}
         aria-label="Open menu"
-        style={{ display: "none" }}
       >
         <FaBars />
       </button>
