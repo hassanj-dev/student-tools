@@ -204,7 +204,8 @@ img, svg { display: block; max-width: 100%; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;   /* 👈 IMPORTANT */
+  overflow-x: auto;
 
   gap: 10px;
   padding: 10px 14px;
@@ -243,7 +244,7 @@ img, svg { display: block; max-width: 100%; }
   flex-shrink: 0;
 }
 .nav-wrap { display: flex; align-items: center; gap: 10px; flex: 1; justify-content: flex-end; flex-wrap: wrap; }
-.nav-links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; display: none; }
 .nav-link {
   padding: 8px 14px;
   border-radius: 999px;
@@ -823,9 +824,11 @@ input:focus, textarea:focus, select:focus {
 /* ════════════════════════════════════════════════
    RESPONSIVE — SMALL MOBILE ≤ 380px
    ════════════════════════════════════════════════ */
-@media (max-width: 380px) {
+@media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; } /* rely on sidebar on tiny screens */
+  .nav-links { 
+    display: none; 
+  } /* rely on sidebar on tiny screens */
   .stats-grid { grid-template-columns: 1fr; }
   .countdown-grid { grid-template-columns: repeat(2, 1fr); }
   .calc-btn { padding: 13px 4px; font-size: .88rem; }
