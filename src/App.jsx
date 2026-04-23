@@ -15,7 +15,7 @@ import Flashcards from "./pages/Flashcards";
 import PDFViewer from "./pages/PDFViewer";
 import Planner from "./pages/Planner";
 import Calculator from "./pages/Calculator";
-import ImageConverter from "./pages/ImageConverter";
+import ImageConverter from "./pages/Imageconverter";
 import { ThemeProvider } from "./context/ThemeContext";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
