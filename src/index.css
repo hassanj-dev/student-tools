@@ -222,6 +222,7 @@ img, svg { display: block; max-width: 100%; }
   font-style: italic;
   background: linear-gradient(45deg, #6c63ff, #4f46e5);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .brand p { margin: 2px 0 0; font-size: .78rem; color: var(--muted); }
@@ -1269,6 +1270,7 @@ body.dark .nav-link.active {
 .privacy-page .logo span {
   background: linear-gradient(45deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1308,6 +1310,7 @@ body.dark .nav-link.active {
 .privacy-page .hero h1 em {
   background: linear-gradient(45deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1439,6 +1442,7 @@ body.dark .nav-link.active {
 .brand-title span {
   background: linear-gradient(45deg, #7c3aed, #06b6d4);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
