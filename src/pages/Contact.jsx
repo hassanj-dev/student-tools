@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const contactInfo = [
-  { icon: "✉️", label: "General",  value: "hello@sparkdesk.app" },
-  { icon: "🐛", label: "Bug Reports", value: "bugs@sparkdesk.app" },
+  { icon: "✉️", label: "General",  value: "info@sparkdesk.online" },
+  { icon: "🐛", label: "Bug Reports", value: "info@sparkdesk.online" },
   { icon: "⏱️", label: "Response Time", value: "Within 48 hours" },
   { icon: "📍", label: "Location",  value: "Online — worldwide" },
 ];
