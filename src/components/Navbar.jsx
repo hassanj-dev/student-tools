@@ -9,50 +9,49 @@ export default function Navbar({ onMenuClick }) {
 
   return (
     <header className="navbar glass">
-      {/* Hamburger — shown only on mobile via CSS */}
+
+      {/* LEFT: Hamburger + Brand */}
+      <div className="navbar-left">
+        <button
+          className="icon-btn hamburger-btn"
+          onClick={onMenuClick}
+          aria-label="Open menu"
+        >
+          <FaBars />
+        </button>
+
+        <a href="/" className="brand">
+          <img src="/logo.png" alt="SparkDesk Logo" className="brand-logo" />
+          <div className="brand-text">
+            <h1 className="brand-title">
+              Spark<span>Desk</span>
+            </h1>
+            <p className="brand-sub">Study smarter, stay organized</p>
+          </div>
+        </a>
+      </div>
+
+      {/* CENTER: Nav links — hidden on mobile */}
+      <nav className="nav-links">
+        <NavLink to="/"             className={linkClass}>Home</NavLink>
+        <NavLink to="/gpa"          className={linkClass}>GPA</NavLink>
+        <NavLink to="/word-counter" className={linkClass}>Words</NavLink>
+        <NavLink to="/resume"       className={linkClass}>Resume</NavLink>
+        <NavLink to="/timetable"    className={linkClass}>Timetable</NavLink>
+        <NavLink to="/countdown"    className={linkClass}>Countdown</NavLink>
+        <NavLink to="/calculator"   className={linkClass}>Calc</NavLink>
+      </nav>
+
+      {/* RIGHT: Theme toggle */}
       <button
-        className="icon-btn mobile-menu-btn"
-        onClick={onMenuClick}
-        aria-label="Open menu"
+        className="icon-btn theme-btn"
+        onClick={() => setDark((v) => !v)}
+        aria-label="Toggle dark mode"
+        title={dark ? "Switch to light mode" : "Switch to dark mode"}
       >
-        <FaBars />
+        {dark ? <FaSun /> : <FaMoon />}
       </button>
 
-      <div className="brand">
-        
-        {/* ✅ LOGO ADDED HERE */}
-        <img src="/logo.png" alt="Logo" className="brand-logo" />
-
-        <div>
-          <a href="https://sparkdesk.xyz/">
- <h1 className="brand-title">
-  Spark<span>Desk</span>
-</h1>
-</a>
-          <p>Study smarter, stay organized</p>
-        </div>
-      </div>
-
-      <div className="nav-wrap">
-        <nav className="nav-links">
-          <NavLink to="/" className={linkClass}>Home</NavLink>
-          <NavLink to="/gpa" className={linkClass}>GPA</NavLink>
-          <NavLink to="/word-counter" className={linkClass}>Words</NavLink>
-          <NavLink to="/resume" className={linkClass}>Resume</NavLink>
-          <NavLink to="/timetable" className={linkClass}>Timetable</NavLink>
-          <NavLink to="/countdown" className={linkClass}>Countdown</NavLink>
-          <NavLink to="/calculator" className={linkClass}>Calc</NavLink>
-        </nav>
-
-        <button
-          className="icon-btn"
-          onClick={() => setDark((v) => !v)}
-          aria-label="Toggle dark mode"
-          title={dark ? "Switch to light mode" : "Switch to dark mode"}
-        >
-          {dark ? <FaSun /> : <FaMoon />}
-        </button>
-      </div>
     </header>
   );
 }

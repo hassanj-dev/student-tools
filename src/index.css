@@ -2240,3 +2240,119 @@ input:focus, textarea:focus, select:focus {
   .calc-btn { padding: 13px 4px; font-size: 0.85rem; }
   .hero h2 { font-size: 1.4rem; }
 }
+
+/* ═══════════════════════════════════════════
+   NAVBAR FIX — paste at bottom of index.css
+   ═══════════════════════════════════════════ */
+
+/* Navbar layout: 3 zones */
+.navbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;          /* never wrap */
+  padding: 0 20px !important;
+  gap: 12px !important;
+  min-height: var(--navbar-h) !important;
+  border-radius: 0 !important;
+}
+
+/* LEFT zone: hamburger + brand side by side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+/* Brand inside navbar-left */
+.navbar-left .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.brand-text { min-width: 0; }
+
+.brand-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.brand-title span {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-sub {
+  margin: 3px 0 0;
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* CENTER: nav links — only desktop */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+/* RIGHT: theme button — never shrinks */
+.theme-btn {
+  flex-shrink: 0;
+}
+
+/* Hamburger button — always visible */
+.hamburger-btn {
+  flex-shrink: 0;
+  display: grid !important;
+  place-items: center;
+}
+
+/* ── MOBILE ≤ 768px ── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 14px !important;
+    gap: 8px !important;
+  }
+
+  /* Hide nav links on mobile — use sidebar */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* Brand subtitle hidden on tiny screens */
+  .brand-sub {
+    display: none;
+  }
+
+  .brand-logo {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .brand-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* ── SMALL MOBILE ≤ 380px ── */
+@media (max-width: 380px) {
+  .brand-title {
+    font-size: 1rem !important;
+  }
+}
