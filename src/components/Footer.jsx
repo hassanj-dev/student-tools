@@ -55,14 +55,14 @@ const Footer = () => {
               <span className="col-dot"></span> Tools
             </h4>
             <ul>
-              <li><a href="#" className="footer-link">GPA Calculator</a></li>
-              <li><a href="#" className="footer-link">Word Counter</a></li>
-              <li><a href="#" className="footer-link">Resume Builder</a></li>
-              <li><a href="#" className="footer-link">Timetable</a></li>
-              <li><a href="#" className="footer-link">Pomodoro Timer</a></li>
-              <li><a href="#" className="footer-link">Flashcards</a></li>
-              <li><a href="#" className="footer-link">PDF Notes</a></li>
-              <li><a href="#" className="footer-link">Planner</a></li>
+              <li><a href="https://www.sparkdesk.online/gpa" className="footer-link">GPA Calculator</a></li>
+              <li><a href="https://www.sparkdesk.online/word-counter" className="footer-link">Word Counter</a></li>
+              <li><a href="https://www.sparkdesk.online/resume" className="footer-link">Resume Builder</a></li>
+              <li><a href="https://www.sparkdesk.online/timetable" className="footer-link">Timetable</a></li>
+              <li><a href="https://www.sparkdesk.online/pomodoro" className="footer-link">Pomodoro Timer</a></li>
+              <li><a href="https://www.sparkdesk.online/flashcards" className="footer-link">Flashcards</a></li>
+              <li><a href="https://www.sparkdesk.online/pdf-notes" className="footer-link">PDF Notes</a></li>
+              <li><a href="https://www.sparkdesk.online/planner" className="footer-link">Planner</a></li>
             </ul>
           </div>
 
@@ -72,10 +72,10 @@ const Footer = () => {
               <span className="col-dot col-dot-accent"></span> Company
             </h4>
             <ul>
-              <li><a href="#" className="footer-link">About Us</a></li>
-              <li><a href="#" className="footer-link">Contact</a></li>
-              <li><a href="#" className="footer-link">Privacy Policy</a></li>
-              <li><a href="#" className="footer-link">Terms of Use</a></li>
+              <li><a href="https://www.sparkdesk.online/about" className="footer-link">About Us</a></li>
+              <li><a href="https://www.sparkdesk.online/contact" className="footer-link">Contact</a></li>
+              <li><a href="https://www.sparkdesk.online/privacy" className="footer-link">Privacy Policy</a></li>
+              <li><a href="https://www.sparkdesk.online/terms" className="footer-link">Terms of Use</a></li>
             </ul>
 
             <div className="footer-stats">
@@ -100,11 +100,11 @@ const Footer = () => {
           </p>
 
           <div className="footer-bottom-links">
-            <a href="#" className="footer-link">Privacy</a>
+            <a href="https://www.sparkdesk.online/privacy" className="footer-link">Privacy</a>
             <span>·</span>
-            <a href="#" className="footer-link">Terms</a>
+            <a href="https://www.sparkdesk.online/terms" className="footer-link">Terms</a>
             <span>·</span>
-            <a href="#" className="footer-link">Contact</a>
+            <a href="https://www.sparkdesk.online/contact" className="footer-link">Contact</a>
           </div>
         </div>
       </footer>

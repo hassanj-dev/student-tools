@@ -2356,3 +2356,44 @@ input:focus, textarea:focus, select:focus {
     font-size: 1rem !important;
   }
 }
+
+/* ═══════════════════════════════
+   LIGHT MODE: ONLY TEXT WHITE
+   ═══════════════════════════════ */
+
+body:not(.dark) .site-footer,
+body:not(.dark) .footer-inner,
+body:not(.dark) .footer-bottom,
+body:not(.dark) .footer-logo h3,
+body:not(.dark) .footer-logo p,
+body:not(.dark) .footer-tagline,
+body:not(.dark) .footer-col-title,
+body:not(.dark) .footer-link,
+body:not(.dark) .footer-bottom strong,
+body:not(.dark) .footer-bottom-links a {
+  color: #ffffff;
+}
+
+/* Hover effects */
+body:not(.dark) .footer-link:hover,
+body:not(.dark) .footer-bottom-links a:hover {
+  color: #cbd5f5; /* thoda soft hover */
+}
+
+/* Inputs */
+body:not(.dark) .footer-subscribe input {
+  color: #ffffff;
+}
+
+body:not(.dark) .footer-subscribe input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Social icons */
+body:not(.dark) .social-btn {
+  color: #ffffff;
+}
+
+body:not(.dark) .social-btn:hover {
+  color: #ffffff;
+}
