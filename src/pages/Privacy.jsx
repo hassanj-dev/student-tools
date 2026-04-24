@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../components/SEO";
 
 const sections = [
   {
@@ -191,6 +192,12 @@ export default function Privacy() {
   const [activeSection, setActiveSection] = useState(null);
 
   return (
+    <>
+    <SEO
+  title="Privacy Policy | SparkDesk"
+  description="Read SparkDesk privacy policy and how your data is handled securely."
+  url="https://www.sparkdesk.online/privacy"
+/>
     <main className="page prv-page">
 
       {/* HERO */}
@@ -305,5 +312,6 @@ export default function Privacy() {
         </div>
       </div>
     </main>
+    </>
   );
 }

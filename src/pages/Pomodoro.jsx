@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import SEO from "../components/SEO";
 
 const FOCUS = 25 * 60;
 const BREAK = 5 * 60;
@@ -37,6 +38,12 @@ export default function Pomodoro() {
   };
 
   return (
+    <>
+    <SEO
+  title="Pomodoro Timer | SparkDesk"
+  description="Focus better using Pomodoro timer for productivity and study sessions."
+  url="https://www.sparkdesk.online/pomodoro"
+/>
     <main className="page">
       <section className="card glass center-card">
         <span className="section-tag">Pomodoro Timer</span>
@@ -55,5 +62,6 @@ export default function Pomodoro() {
         </div>
       </section>
     </main>
+    </>
   );
 }

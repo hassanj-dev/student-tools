@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 const terms = [
   {
@@ -98,6 +99,12 @@ export default function Terms() {
   const [activeIdx, setActiveIdx] = useState(null);
 
   return (
+    <>
+    <SEO
+  title="Terms & Conditions | SparkDesk"
+  description="Read terms and conditions for using SparkDesk tools and services."
+  url="https://www.sparkdesk.online/terms"
+/>
     <main className="page prv-page">
 
       {/* ── HERO ── */}
@@ -186,5 +193,6 @@ export default function Terms() {
         </div>
       </div>
     </main>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "../components/SEO";
 
 const buttons = [
   ["C", "±", "%", "÷"],
@@ -91,6 +92,12 @@ export default function Calculator() {
   };
 
   return (
+    <>
+    <SEO
+  title="Calculator | SparkDesk"
+  description="Free online calculator for basic and advanced calculations."
+  url="https://www.sparkdesk.online/calculator"
+/>
     <main className="page">
       <section className="card glass">
         <h2>Calculator</h2>
@@ -116,5 +123,6 @@ export default function Calculator() {
         </div>
       </section>
     </main>
+    </>
   );
 }

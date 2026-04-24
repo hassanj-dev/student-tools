@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "../components/SEO";
 
 export default function Flashcards() {
   const [cards, setCards] = useState([
@@ -30,6 +31,12 @@ export default function Flashcards() {
   const current = cards[index];
 
   return (
+    <>
+    <SEO
+  title="Flashcards | SparkDesk"
+  description="Create and study flashcards online for free. Improve memory and learning speed."
+  url="https://www.sparkdesk.online/flashcards"
+/>
     <main className="page">
       <section className="card glass">
         <h2>Flashcard Quiz Tool</h2>
@@ -65,5 +72,6 @@ export default function Flashcards() {
         <button className="btn" onClick={addCard}>Add Card</button>
       </section>
     </main>
+    </>
   );
 }

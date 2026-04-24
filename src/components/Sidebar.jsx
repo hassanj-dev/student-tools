@@ -39,17 +39,15 @@ export default function Sidebar({ open, onClose }) {
         <h2 style={{ marginTop: 18 }}>Navigation</h2>
 
         <NavLink to="/" className={sideLink} onClick={onClose}><FaHome /> Home</NavLink>
-        <NavLink to="/gpa" className={sideLink} onClick={onClose}>📊 GPA Calculator</NavLink>
-        <NavLink to="/word-counter" className={sideLink} onClick={onClose}>🔤 Word Counter</NavLink>
-        <NavLink to="/resume" className={sideLink} onClick={onClose}><FaFileAlt /> Resume Builder</NavLink>
-        <NavLink to="/timetable" className={sideLink} onClick={onClose}><FaLayerGroup /> Timetable</NavLink>
-        <NavLink to="/countdown" className={sideLink} onClick={onClose}><FaClock /> Countdown</NavLink>
-        <NavLink to="/pomodoro" className={sideLink} onClick={onClose}>⏱ Pomodoro</NavLink>
-        <NavLink to="/flashcards" className={sideLink} onClick={onClose}>🧠 Flashcards</NavLink>
-        <NavLink to="/pdf-notes" className={sideLink} onClick={onClose}><FaStickyNote /> PDF Notes</NavLink>
-        <NavLink to="/planner" className={sideLink} onClick={onClose}><FaTasks /> Planner</NavLink>
-        <NavLink to="/calculator" className={sideLink} onClick={onClose}>🔢 Calculator</NavLink>
         <NavLink to="/image-converter" className={sideLink} onClick={onClose}>🖼️ Image Converter</NavLink>
+        <NavLink to="/gpa" className={sideLink} onClick={onClose}>📊 GPA Calculator</NavLink>
+        <NavLink to="/calculator" className={sideLink} onClick={onClose}>🔢 Calculator</NavLink>
+        <NavLink to="/word-counter" className={sideLink} onClick={onClose}>🔤 Word Counter</NavLink>
+        <NavLink to="/pomodoro" className={sideLink} onClick={onClose}>⏱ Pomodoro</NavLink>
+        <NavLink to="/resume" className={sideLink} onClick={onClose}><FaFileAlt /> Resume Builder</NavLink>
+        <NavLink to="/pdf-notes" className={sideLink} onClick={onClose}><FaStickyNote /> PDF Notes</NavLink>
+        <NavLink to="/flashcards" className={sideLink} onClick={onClose}>🧠 Flashcards</NavLink>
+        <NavLink to="/timetable" className={sideLink} onClick={onClose}><FaLayerGroup /> Timetable</NavLink>
       </aside>
     </>
   );

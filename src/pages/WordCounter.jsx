@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import SEO from "../components/SEO";
 
 export default function WordCounter() {
   const [text, setText] = useState("");
@@ -10,12 +11,17 @@ export default function WordCounter() {
     const charsNoSpaces = text.replace(/\s/g, "").length;
     const sentences = trimmed ? text.split(/[.!?]+/).filter((x) => x.trim()).length : 0;
     const paragraphs = trimmed ? text.split(/\n+/).filter((p) => p.trim()).length : 0;
-    const readingTime = Math.max(1, Math.ceil(words / 200));
+    const readingTime = Math.max(0, Math.ceil(words / 200));
 
     return { words, chars, charsNoSpaces, sentences, paragraphs, readingTime };
   }, [text]);
 
   return (
+    <>
+    <SEO 
+  title="Word Counter | SparkDesk"
+  description="Count words, characters and reading time instantly"
+/>
     <main className="page">
       <section className="card glass">
         <h2>Word Counter</h2>
@@ -39,5 +45,6 @@ export default function WordCounter() {
         </div>
       </section>
     </main>
+    </>
   );
 }

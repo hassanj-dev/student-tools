@@ -58,7 +58,6 @@ const Footer = () => {
               <li><a href="https://www.sparkdesk.online/gpa" className="footer-link">GPA Calculator</a></li>
               <li><a href="https://www.sparkdesk.online/word-counter" className="footer-link">Word Counter</a></li>
               <li><a href="https://www.sparkdesk.online/resume" className="footer-link">Resume Builder</a></li>
-              <li><a href="https://www.sparkdesk.online/timetable" className="footer-link">Timetable</a></li>
               <li><a href="https://www.sparkdesk.online/pomodoro" className="footer-link">Pomodoro Timer</a></li>
               <li><a href="https://www.sparkdesk.online/flashcards" className="footer-link">Flashcards</a></li>
               <li><a href="https://www.sparkdesk.online/pdf-notes" className="footer-link">PDF Notes</a></li>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
+import SEO from "../components/SEO";
 
 const contactInfo = [
   { icon: "✉️", label: "General",  value: "info@sparkdesk.online" },
@@ -35,6 +36,12 @@ export default function Contact() {
   };
 
   return (
+    <>
+    <SEO
+  title="Contact Us | SparkDesk"
+  description="Contact SparkDesk team for support, feedback or suggestions."
+  url="https://www.sparkdesk.online/contact"
+/>
     <main className="page contact-page">
 
       {/* ── HERO ── */}
@@ -155,5 +162,6 @@ export default function Contact() {
       </div>
 
     </main>
+    </>
   );
 }

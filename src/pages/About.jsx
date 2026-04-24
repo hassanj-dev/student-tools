@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 
 const stats = [
   { num: "11", suffix: "+", label: "Free Tools" },
   { num: "0", suffix: "$", label: "Forever Free" },
   { num: "1", suffix: "k+", label: "Students Helped" },
-  { num: "0", suffix: "", label: "Ads. Ever." },
+  { num: "Few", suffix: "", label: "Ads" },
 ];
 
 const tools = [
@@ -34,6 +36,12 @@ const timeline = [
 
 export default function About() {
   return (
+    <>
+    <SEO
+  title="About Us | SparkDesk"
+  description="Learn about SparkDesk mission: free tools for students and productivity."
+  url="https://www.sparkdesk.online/about"
+/>
     <main className="page about-page">
 
       {/* HERO */}
@@ -187,5 +195,6 @@ export default function About() {
       </section>
 
     </main>
+    </>
   );
 }

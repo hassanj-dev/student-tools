@@ -1,5 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
+import SEO from "../components/SEO";
 
 const defaultRow = { name: "", marks: "", credit: "" };
 
@@ -57,6 +58,12 @@ export default function GPA() {
   };
 
   return (
+    <>
+    <SEO 
+  title="GPA Calculator | SparkDesk"
+  description="Calculate GPA easily with SparkDesk free GPA calculator"
+/>
+   
     <main className="page">
       <section className="card glass gpa-card">
         <div className="gpa-header">
@@ -135,5 +142,6 @@ export default function GPA() {
         </div>
       </section>
     </main>
+     </>
   );
 }
