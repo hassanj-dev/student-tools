@@ -58,9 +58,9 @@ function Sidebar({ open, onClose }) {
           <FaExchangeAlt /> Unit Converter
         </NavLink>
 
-        {/* <NavLink to="/notesapp" className={sideLink} onClick={handleClose}>
+        <NavLink to="/notesapp" className={sideLink} onClick={handleClose}>
           <FaClipboard /> Notes App
-        </NavLink> */}
+        </NavLink>
 
         <NavLink to="/word-counter" className={sideLink} onClick={handleClose}>
           <FaFont /> Word Counter
