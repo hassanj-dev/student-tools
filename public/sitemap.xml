@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.sparkdesk.online/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Pages -->
+  <url>
+    <loc>https://www.sparkdesk.online/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/contact</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/privacy</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/terms</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tools -->
+  <url>
+    <loc>https://www.sparkdesk.online/gpa</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/word-counter</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/resume</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/image-converter</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/unitconverter</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/pomodoro</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.sparkdesk.online/calculator</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.sparkdesk.online/notesapp</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://www.sparkdesk.online/pdf-notes</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sparkdesk.online/flashcards</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

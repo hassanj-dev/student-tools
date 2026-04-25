@@ -108,7 +108,7 @@ export default function Home() {
 
         <div className="hero-card">
           <div className="stat">
-            <strong>11</strong>
+            <strong>10</strong>
             <span>useful tools</span>
           </div>
           <div className="stat">

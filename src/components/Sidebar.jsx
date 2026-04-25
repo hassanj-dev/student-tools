@@ -82,10 +82,6 @@ function Sidebar({ open, onClose }) {
           <FaBook /> Flashcards
         </NavLink>
 
-        <NavLink to="/timetable" className={sideLink} onClick={handleClose}>
-          <FaLayerGroup /> Timetable
-        </NavLink>
-
       </aside>
     </>
   );

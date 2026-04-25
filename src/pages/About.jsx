@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import SEO from "../components/SEO";
 
 const stats = [
-  { num: "11", suffix: "+", label: "Free Tools" },
+  { num: "10", suffix: "+", label: "Free Tools" },
   { num: "0", suffix: "$", label: "Forever Free" },
   { num: "1", suffix: "k+", label: "Students Helped" },
   { num: "Few", suffix: "", label: "Ads" },
