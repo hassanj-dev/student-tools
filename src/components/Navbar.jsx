@@ -1,16 +1,22 @@
 import { NavLink, Link } from "react-router-dom";
 import { FaMoon, FaSun, FaBars } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
+import { memo, useCallback } from "react";
 
-const linkClass = ({ isActive }) => `nav-link ${isActive ? "active" : ""}`;
+const linkClass = ({ isActive }) =>
+  `nav-link ${isActive ? "active" : ""}`;
 
-export default function Navbar({ onMenuClick }) {
+function Navbar({ onMenuClick }) {
   const { dark, setDark } = useTheme();
+
+  const toggleTheme = useCallback(() => {
+    setDark((v) => !v);
+  }, [setDark]);
 
   return (
     <header className="navbar glass">
 
-      {/* LEFT: Hamburger + Brand */}
+      {/* LEFT */}
       <div className="navbar-left">
         <button
           className="icon-btn hamburger-btn"
@@ -20,41 +26,42 @@ export default function Navbar({ onMenuClick }) {
           <FaBars />
         </button>
 
-      <Link to="/" className="brand">
-  <img 
-    src="/logo.webp" 
-    alt="SparkDesk Logo" 
-    className="brand-logo"
-    loading="eager"
-    width="40"
-    height="40"
-  />
-  <div className="brand-text">
-    <h1 className="brand-title">
-      Spark<span>Desk</span>
-    </h1>
-    <p className="brand-sub">Study smarter, stay organized</p>
-  </div>
-</Link>
+        <Link to="/" className="brand">
+          <img 
+            src="/logo.webp"
+            alt="SparkDesk Logo"
+            className="brand-logo"
+            loading="lazy"   
+            width="40"
+            height="40"
+          />
+          <div className="brand-text">
+            <h1 className="brand-title">
+              Spark<span>Desk</span>
+            </h1>
+            <p className="brand-sub">
+              Study smarter, stay organized
+            </p>
+          </div>
+        </Link>
       </div>
 
-      {/* CENTER: Nav links — hidden on mobile */}
+      {/* CENTER (desktop only) */}
       <nav className="nav-links">
-        <NavLink to="/"             className={linkClass}>Home</NavLink>
-        <NavLink to="/gpa"          className={linkClass}>GPA</NavLink>
+        <NavLink to="/" className={linkClass}>Home</NavLink>
+        <NavLink to="/gpa" className={linkClass}>GPA</NavLink>
         <NavLink to="/word-counter" className={linkClass}>Words</NavLink>
-        <NavLink to="/resume"       className={linkClass}>Resume</NavLink>
-        <NavLink to="/image-converter"    className={linkClass}>Image Tools</NavLink>
-        <NavLink to="/notesapp"    className={linkClass}>Notes</NavLink>
-        <NavLink to="/calculator"   className={linkClass}>Calc</NavLink>
+        <NavLink to="/resume" className={linkClass}>Resume</NavLink>
+        <NavLink to="/image-converter" className={linkClass}>Image</NavLink>
+        <NavLink to="/notesapp" className={linkClass}>Notes</NavLink>
+        <NavLink to="/calculator" className={linkClass}>Calc</NavLink>
       </nav>
 
-      {/* RIGHT: Theme toggle */}
+      {/* RIGHT */}
       <button
         className="icon-btn theme-btn"
-        onClick={() => setDark((v) => !v)}
-        aria-label="Toggle dark mode"
-        title={dark ? "Switch to light mode" : "Switch to dark mode"}
+        onClick={toggleTheme}
+        aria-label="Toggle theme"
       >
         {dark ? <FaSun /> : <FaMoon />}
       </button>
@@ -62,3 +69,5 @@ export default function Navbar({ onMenuClick }) {
     </header>
   );
 }
+
+export default memo(Navbar);
