@@ -7,6 +7,7 @@
 /* ══════════════════════════════════════════════
    CSS VARIABLES
    ══════════════════════════════════════════════ */
+
 :root {
   /* Colors */
   --primary:        #6d28d9;
@@ -268,8 +269,8 @@ img, svg { display: block; max-width: 100%; }
   background: var(--card);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(6px) saturate(180%);
+  backdrop-filter: blur(px) saturate(180%);
   border-radius: var(--radius-lg);
 }
 
@@ -2412,16 +2413,17 @@ input:focus, textarea:focus, select:focus {
 .note-content {
   font-size: 0.85rem;
   color: var(--text-2);
-  line-height: 1.6;
-  margin: 0 0 14px;
-  flex: 1;
+  line-height: 1.5;
+  margin-bottom: 12px;
+
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+
   -webkit-box-orient: vertical;
   overflow: hidden;
-  white-space: pre-wrap;
   word-break: break-word;
-  min-height: 52px;
 }
 
 .note-footer {
@@ -2690,13 +2692,13 @@ input:focus, textarea:focus, select:focus {
 /* ══════════════════════════════════════════════
    RESPONSIVE — TINY MOBILE ≤ 380px
    ══════════════════════════════════════════════ */
-@media (max-width: 380px) {
+@media (max-width: 768px) {
   .grid            { grid-template-columns: 1fr; }
   .stats-grid      { grid-template-columns: 1fr; }
   .countdown-grid  { grid-template-columns: repeat(2, 1fr); }
   .calc-btn        { padding: 13px 4px; font-size: 0.85rem; }
   .hero h2         { font-size: 1.4rem; }
-  .nav-links,
+   .nav-links       { display: none; }  /* ✅ fixed */
   .brand-sub       { display: none; }
   .navbar          { padding: 0 14px !important; gap: 8px !important; }
   .brand-logo      { width: 36px !important; height: 36px !important; }
