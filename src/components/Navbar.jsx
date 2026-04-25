@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaMoon, FaSun, FaBars } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 
@@ -20,15 +20,22 @@ export default function Navbar({ onMenuClick }) {
           <FaBars />
         </button>
 
-        <a href="/" className="brand">
-          <img src="/logo.png" alt="SparkDesk Logo" className="brand-logo" />
-          <div className="brand-text">
-            <h1 className="brand-title">
-              Spark<span>Desk</span>
-            </h1>
-            <p className="brand-sub">Study smarter, stay organized</p>
-          </div>
-        </a>
+      <Link to="/" className="brand">
+  <img 
+    src="/logo.webp" 
+    alt="SparkDesk Logo" 
+    className="brand-logo"
+    loading="eager"
+    width="40"
+    height="40"
+  />
+  <div className="brand-text">
+    <h1 className="brand-title">
+      Spark<span>Desk</span>
+    </h1>
+    <p className="brand-sub">Study smarter, stay organized</p>
+  </div>
+</Link>
       </div>
 
       {/* CENTER: Nav links — hidden on mobile */}
@@ -37,8 +44,8 @@ export default function Navbar({ onMenuClick }) {
         <NavLink to="/gpa"          className={linkClass}>GPA</NavLink>
         <NavLink to="/word-counter" className={linkClass}>Words</NavLink>
         <NavLink to="/resume"       className={linkClass}>Resume</NavLink>
-        <NavLink to="/timetable"    className={linkClass}>Timetable</NavLink>
-        <NavLink to="/countdown"    className={linkClass}>Countdown</NavLink>
+        <NavLink to="/image-converter"    className={linkClass}>Image Tools</NavLink>
+        <NavLink to="/notesapp"    className={linkClass}>Notes</NavLink>
         <NavLink to="/calculator"   className={linkClass}>Calc</NavLink>
       </nav>
 

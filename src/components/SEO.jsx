@@ -6,14 +6,14 @@ export default function SEO({ title, description, url }) {
       <title>{title}</title>
       <meta name="description" content={description} />
 
-      {/* Optional but recommended */}
+      {/* ✅ ADD HERE */}
+      <meta
+        name="keywords"
+        content="notes app online, free notes tool, unit converter, length converter, weight converter"
+      />
+
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
-
-      {/* Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
     </Helmet>
   );
 }

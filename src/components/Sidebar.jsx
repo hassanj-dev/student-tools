@@ -42,6 +42,8 @@ export default function Sidebar({ open, onClose }) {
         <NavLink to="/image-converter" className={sideLink} onClick={onClose}>🖼️ Image Converter</NavLink>
         <NavLink to="/gpa" className={sideLink} onClick={onClose}>📊 GPA Calculator</NavLink>
         <NavLink to="/calculator" className={sideLink} onClick={onClose}>🔢 Calculator</NavLink>
+        <NavLink to="/unitconverter" className={sideLink} onClick={onClose}>⚖️ UnitConverter</NavLink>
+        <NavLink to="/notesapp" className={sideLink} onClick={onClose}>📝 NotesApp</NavLink>
         <NavLink to="/word-counter" className={sideLink} onClick={onClose}>🔤 Word Counter</NavLink>
         <NavLink to="/pomodoro" className={sideLink} onClick={onClose}>⏱ Pomodoro</NavLink>
         <NavLink to="/resume" className={sideLink} onClick={onClose}><FaFileAlt /> Resume Builder</NavLink>

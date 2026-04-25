@@ -20,7 +20,7 @@ const Footer = () => {
           {/* BRAND */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo.png" alt="Logo" className="brand-logo" />
+              <img src="/logo.webp" alt="Logo" className="brand-logo" />
               <div>
                 <h3>SparkDesk</h3>
                 <p>Study smarter, stay organized.</p>
