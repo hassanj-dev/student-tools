@@ -73,9 +73,13 @@ export default function Home() {
 
   return (
     <>
+    <h1 className="text-4xl font-bold">
+  SparkDesk - Free Student Productivity Tools
+</h1>
     <SEO
   title="SparkDesk | Free Student Tools Platform"
 />
+
 
 
 <Helmet>
