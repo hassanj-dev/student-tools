@@ -48,7 +48,6 @@ function Sidebar({ open, onClose }) {
           </button>
         </div>
 
-        {/* Links */}
         <NavLink to="/" className={sideLink} onClick={handleClose}>
           <FaHome /> Home
         </NavLink>
