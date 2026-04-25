@@ -2724,13 +2724,13 @@ input:focus, textarea:focus, select:focus {
 /* ══════════════════════════════════════════════
    RESPONSIVE — TINY MOBILE ≤ 380px
    ══════════════════════════════════════════════ */
-@media (max-width: 380px) {
+@media (max-width: 768px) {
   .grid            { grid-template-columns: 1fr; }
   .stats-grid      { grid-template-columns: 1fr; }
   .countdown-grid  { grid-template-columns: repeat(2, 1fr); }
   .calc-btn        { padding: 13px 4px; font-size: 0.85rem; }
   .hero h2         { font-size: 1.4rem; }
-  .nav-links,
+ .nav-links        {display: none;}
   .brand-sub       { display: none; }
   .navbar          { padding: 0 14px !important; gap: 8px !important; }
   .brand-logo      { width: 36px !important; height: 36px !important; }
