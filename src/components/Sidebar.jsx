@@ -10,8 +10,7 @@ import {
   FaBook,
   FaFont,
   FaExchangeAlt,
-  FaClipboard,
-  FaTimes
+  FaClipboard
 } from "react-icons/fa";
 import { memo, useCallback } from "react";
 
@@ -19,7 +18,6 @@ const sideLink = ({ isActive }) =>
   `side-link ${isActive ? "active" : ""}`;
 
 function Sidebar({ open, onClose }) {
-
   const handleClose = useCallback(() => {
     onClose();
   }, [onClose]);
@@ -38,14 +36,6 @@ function Sidebar({ open, onClose }) {
         {/* Header */}
         <div className="sidebar-header">
           <h2>Navigation</h2>
-
-          <button
-            onClick={handleClose}
-            className="sidebar-close-btn"
-            aria-label="Close sidebar"
-          >
-            <FaTimes />
-          </button>
         </div>
 
         <NavLink to="/" className={sideLink} onClick={handleClose}>
@@ -68,9 +58,9 @@ function Sidebar({ open, onClose }) {
           <FaExchangeAlt /> Unit Converter
         </NavLink>
 
-        <NavLink to="/notesapp" className={sideLink} onClick={handleClose}>
+        {/* <NavLink to="/notesapp" className={sideLink} onClick={handleClose}>
           <FaClipboard /> Notes App
-        </NavLink>
+        </NavLink> */}
 
         <NavLink to="/word-counter" className={sideLink} onClick={handleClose}>
           <FaFont /> Word Counter

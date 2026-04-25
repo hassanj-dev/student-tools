@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import GPA from "./pages/GPA";
 import WordCounter from "./pages/WordCounter";
 import UnitConverter from "./pages/UnitConverter";
-import NotesApp from "./pages/NotesApp";
+// import NotesApp from "./pages/NotesApp";
 import ResumeBuilder from "./pages/ResumeBuilder";
 import Pomodoro from "./pages/Pomodoro";
 import Flashcards from "./pages/Flashcards";
@@ -57,7 +57,7 @@ export default function App() {
                 <Route path="/calculator" element={<Calculator />} />
                 <Route path="/image-converter" element={<ImageConverter />} />
                   <Route path="/unitconverter" element={<UnitConverter/>} />
-                    <Route path="/notesapp" element={<NotesApp/>} />
+                    {/* <Route path="/notesapp" element={<NotesApp/>} /> */}
                 <Route path="*" element={<Navigate to="/" replace />} />
 <Route path="/privacy" element={<Privacy />} />
 <Route path="/about" element={<About />} />
