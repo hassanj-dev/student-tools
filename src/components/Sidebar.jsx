@@ -1,55 +1,87 @@
 import { NavLink } from "react-router-dom";
 import {
-  FaHome, FaImage, FaCalculator, FaFileAlt,
-  FaStickyNote, FaClock, FaBook, FaFont,
-  FaExchangeAlt, FaClipboard, FaBolt
+  FaHome,
+  FaImage,
+  FaCalculator,
+  FaFileAlt,
+  FaStickyNote,
+  FaLayerGroup,
+  FaClock,
+  FaBook,
+  FaFont,
+  FaExchangeAlt,
+  FaClipboard
 } from "react-icons/fa";
 import { memo, useCallback } from "react";
 
-const sideLink = ({ isActive }) => `side-link ${isActive ? "active" : ""}`;
+const sideLink = ({ isActive }) =>
+  `side-link ${isActive ? "active" : ""}`;
 
 function Sidebar({ open, onClose }) {
-  const handleClose = useCallback(() => onClose(), [onClose]);
-
-  const navItems = [
-    { to: "/",               icon: <FaHome />,        label: "Home" },
-    { to: "/gpa",            icon: <FaCalculator />,  label: "GPA Calculator" },
-    { to: "/calculator",     icon: <FaBolt />,        label: "Calculator" },
-    { to: "/word-counter",   icon: <FaFont />,        label: "Word Counter" },
-    { to: "/resume",         icon: <FaFileAlt />,     label: "Resume Builder" },
-    { to: "/image-converter",icon: <FaImage />,       label: "Image Converter" },
-    { to: "/unitconverter",  icon: <FaExchangeAlt />, label: "Unit Converter" },
-    { to: "/notesapp",       icon: <FaClipboard />,   label: "Notes App" },
-    { to: "/pomodoro",       icon: <FaClock />,       label: "Pomodoro" },
-    { to: "/pdf-notes",      icon: <FaStickyNote />,  label: "PDF Notes" },
-    { to: "/flashcards",     icon: <FaBook />,        label: "Flashcards" },
-  ];
+  const handleClose = useCallback(() => {
+    onClose();
+  }, [onClose]);
 
   return (
     <>
+      {/* Overlay */}
       <div
         className={`sidebar-overlay ${open ? "open" : ""}`}
         onClick={handleClose}
-        aria-hidden="true"
       />
 
-      <aside className={`sidebar ${open ? "open" : ""}`}>
+      {/* Sidebar */}
+      <aside className={`sidebar glass ${open ? "open" : ""}`}>
+
+        {/* Header */}
         <div className="sidebar-header">
-          <h2>⚡ SparkDesk</h2>
+          <h2>Navigation</h2>
         </div>
 
-        {navItems.map((item) => (
-          <NavLink
-            key={item.to}
-            to={item.to}
-            end={item.to === "/"}
-            className={sideLink}
-            onClick={handleClose}
-          >
-            {item.icon}
-            {item.label}
-          </NavLink>
-        ))}
+        <NavLink to="/" className={sideLink} onClick={handleClose}>
+          <FaHome /> Home
+        </NavLink>
+
+        <NavLink to="/image-converter" className={sideLink} onClick={handleClose}>
+          <FaImage /> Image Converter
+        </NavLink>
+
+        <NavLink to="/gpa" className={sideLink} onClick={handleClose}>
+          <FaCalculator /> GPA Calculator
+        </NavLink>
+
+        <NavLink to="/calculator" className={sideLink} onClick={handleClose}>
+          <FaCalculator /> Calculator
+        </NavLink>
+
+        <NavLink to="/unitconverter" className={sideLink} onClick={handleClose}>
+          <FaExchangeAlt /> Unit Converter
+        </NavLink>
+
+        <NavLink to="/notesapp" className={sideLink} onClick={handleClose}>
+          <FaClipboard /> Notes App
+        </NavLink>
+
+        <NavLink to="/word-counter" className={sideLink} onClick={handleClose}>
+          <FaFont /> Word Counter
+        </NavLink>
+
+        <NavLink to="/pomodoro" className={sideLink} onClick={handleClose}>
+          <FaClock /> Pomodoro
+        </NavLink>
+
+        <NavLink to="/resume" className={sideLink} onClick={handleClose}>
+          <FaFileAlt /> Resume Builder
+        </NavLink>
+
+        <NavLink to="/pdf-notes" className={sideLink} onClick={handleClose}>
+          <FaStickyNote /> PDF Notes
+        </NavLink>
+
+        <NavLink to="/flashcards" className={sideLink} onClick={handleClose}>
+          <FaBook /> Flashcards
+        </NavLink>
+
       </aside>
     </>
   );
