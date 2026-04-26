@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
-      {/* Wave */}
+      {/* Wave SVG */}
       <div className="footer-wave">
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
           <path
@@ -13,14 +14,13 @@ const Footer = () => {
         </svg>
       </div>
 
-      {/* Footer */}
       <footer className="site-footer">
         <div className="footer-inner">
 
           {/* BRAND */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo.webp" alt="Logo" className="brand-logo" />
+              <img src="/logo.webp" alt="SparkDesk Logo" />
               <div>
                 <h3>SparkDesk</h3>
                 <p>Study smarter, stay organized.</p>
@@ -28,58 +28,63 @@ const Footer = () => {
             </div>
 
             <p className="footer-tagline">
-              A free all-in-one toolkit built for students — GPA, resume, planner and more.
+              All-in-one free productivity tools for students — GPA, resume, planner and more.
             </p>
 
-            {/* Subscribe */}
             <div className="footer-subscribe">
-              <i className="fa fa-envelope subscribe-icon"></i>
               <input type="email" placeholder="your@email.com" />
               <button>Subscribe</button>
             </div>
 
-            {/* Socials */}
             <div className="footer-socials">
-              <a href="#" className="social-btn"><i className="fab fa-github"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-linkedin"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-discord"></i></a>
+              <a href="#" className="social-btn" aria-label="GitHub">
+                <i className="fab fa-github" />
+              </a>
+              <a href="#" className="social-btn" aria-label="Twitter">
+                <i className="fab fa-twitter" />
+              </a>
+              <a href="#" className="social-btn" aria-label="Instagram">
+                <i className="fab fa-instagram" />
+              </a>
+              <a href="#" className="social-btn" aria-label="LinkedIn">
+                <i className="fab fa-linkedin" />
+              </a>
+              <a href="#" className="social-btn" aria-label="YouTube">
+                <i className="fab fa-youtube" />
+              </a>
+              <a href="#" className="social-btn" aria-label="Discord">
+                <i className="fab fa-discord" />
+              </a>
             </div>
+          </div>
+
+          {/* QUICK LINKS */}
+          <div className="footer-col">
+            <h4 className="footer-col-title">
+              <span className="col-dot" /> Quick Links
+            </h4>
+            <ul>
+              <li><a href="/" className="footer-link">Home</a></li>
+              <li><a href="/gpa" className="footer-link">GPA Calculator</a></li>
+              <li><a href="/resume" className="footer-link">Resume Builder</a></li>
+              <li><a href="/about" className="footer-link">About</a></li>
+            </ul>
           </div>
 
           {/* TOOLS */}
           <div className="footer-col">
             <h4 className="footer-col-title">
-              <span className="col-dot"></span> Tools
+              <span className="col-dot col-dot-accent" /> Resources
             </h4>
             <ul>
-              <li><a href="https://www.sparkdesk.online/gpa" className="footer-link">GPA Calculator</a></li>
-              <li><a href="https://www.sparkdesk.online/word-counter" className="footer-link">Word Counter</a></li>
-              <li><a href="https://www.sparkdesk.online/resume" className="footer-link">Resume Builder</a></li>
-              <li><a href="https://www.sparkdesk.online/pomodoro" className="footer-link">Pomodoro Timer</a></li>
-              <li><a href="https://www.sparkdesk.online/flashcards" className="footer-link">Flashcards</a></li>
-              <li><a href="https://www.sparkdesk.online/pdf-notes" className="footer-link">PDF Notes</a></li>
-              <li><a href="https://www.sparkdesk.online/planner" className="footer-link">Planner</a></li>
-            </ul>
-          </div>
-
-          {/* COMPANY */}
-          <div className="footer-col">
-            <h4 className="footer-col-title">
-              <span className="col-dot col-dot-accent"></span> Company
-            </h4>
-            <ul>
-              <li><a href="https://www.sparkdesk.online/about" className="footer-link">About Us</a></li>
-              <li><a href="https://www.sparkdesk.online/contact" className="footer-link">Contact</a></li>
-              <li><a href="https://www.sparkdesk.online/privacy" className="footer-link">Privacy Policy</a></li>
-              <li><a href="https://www.sparkdesk.online/terms" className="footer-link">Terms of Use</a></li>
+              <li><a href="/privacy" className="footer-link">Privacy Policy</a></li>
+              <li><a href="/terms"   className="footer-link">Terms of Use</a></li>
+              <li><a href="/contact" className="footer-link">Contact</a></li>
             </ul>
 
             <div className="footer-stats">
               <div className="fstat">
-                <strong>11</strong>
+                <strong>11+</strong>
                 <span>Free Tools</span>
               </div>
               <div className="fstat">
@@ -89,21 +94,32 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* FOLLOW US */}
+          <div className="footer-col">
+            <h4 className="footer-col-title">
+              <span className="col-dot" style={{ background: "#60a5fa" }} /> Follow Us
+            </h4>
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+              <a href="#" className="social-btn" aria-label="Twitter"><i className="fab fa-twitter" /></a>
+              <a href="#" className="social-btn" aria-label="Instagram"><i className="fab fa-instagram" /></a>
+              <a href="#" className="social-btn" aria-label="GitHub"><i className="fab fa-github" /></a>
+            </div>
+          </div>
+
         </div>
 
-        {/* Bottom */}
+        {/* Bottom bar */}
         <div className="footer-bottom">
-          <p>© 2025 <strong>SparkDesk</strong>. All rights reserved.</p>
+          <p>© 2026 <strong style={{ color: "#e2e8f0" }}>SparkDesk</strong>. All rights reserved.</p>
           <p className="footer-made">
             Made with <span className="heart">♥</span> for students
           </p>
-
           <div className="footer-bottom-links">
-            <a href="https://www.sparkdesk.online/privacy" className="footer-link">Privacy</a>
+            <a href="/privacy" className="footer-link">Privacy</a>
             <span>·</span>
-            <a href="https://www.sparkdesk.online/terms" className="footer-link">Terms</a>
+            <a href="/terms"   className="footer-link">Terms</a>
             <span>·</span>
-            <a href="https://www.sparkdesk.online/contact" className="footer-link">Contact</a>
+            <a href="/contact" className="footer-link">Contact</a>
           </div>
         </div>
       </footer>
