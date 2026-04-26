@@ -335,7 +335,7 @@ img, svg { display: block; max-width: 100%; }
 
 .sidebar h2 {
   margin: 0 0 16px 10px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
@@ -761,7 +761,7 @@ input:focus, textarea:focus, select:focus {
   background: linear-gradient(135deg, rgba(109,40,217,0.10), rgba(14,165,233,0.10));
   color: var(--primary);
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   border: 1px solid rgba(109,40,217,0.15);
@@ -1797,7 +1797,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .prv-toc-title {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.10em;
@@ -2071,7 +2071,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .footer-col-title {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.10em;
   margin-bottom: 18px;
@@ -2716,24 +2716,31 @@ input:focus, textarea:focus, select:focus {
   .note-color-picker { flex-wrap: wrap; }
 }
 
-/* ══════════════════════════════════════════════
-   RESPONSIVE — TINY MOBILE ≤ 380px
-   ══════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .grid            { grid-template-columns: 1fr; }
   .stats-grid      { grid-template-columns: 1fr; }
   .countdown-grid  { grid-template-columns: repeat(2, 1fr); }
   .calc-btn        { padding: 13px 4px; font-size: 0.85rem; }
   .hero h2         { font-size: 1.4rem; }
- .nav-links        {display: none;}
+  .nav-links       { display: none; }
   .brand-sub       { display: none; }
   .navbar          { padding: 0 14px !important; gap: 8px !important; }
   .brand-logo      { width: 36px !important; height: 36px !important; }
   .brand-title     { font-size: 1.1rem !important; }
   .uc-input-large  { font-size: 1.1rem !important; }
   .uc-result-display { font-size: 1.1rem; }
-}
 
+  .navbar,
+  .sidebar,
+  .glass,
+  .nav-link,
+  .icon-btn,
+  .sidebar-overlay,
+  .note-modal-overlay {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
 /* ══════════════════════════════════════════════
    LIGHT MODE: FOOTER WHITE TEXT
    ══════════════════════════════════════════════ */
@@ -2755,3 +2762,4 @@ body:not(.dark) .social-btn:hover { color: #ffffff; }
 
 body:not(.dark) .footer-subscribe input { color: #ffffff; }
 body:not(.dark) .footer-subscribe input::placeholder { color: rgba(255,255,255,0.6); }
+
