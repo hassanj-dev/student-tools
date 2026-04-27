@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   /* Colors */
@@ -48,8 +48,8 @@
   --radius-lg:      28px;
   --radius-xl:      36px;
 
-  /* Typography */
---font-display: 'Oswald', sans-serif;
+/* Typography */
+--font-display: 'Poppins', sans-serif;
 --font-body:    'Inter', sans-serif;
 
   /* Motion */
