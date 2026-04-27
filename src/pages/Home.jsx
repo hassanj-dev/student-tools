@@ -809,4 +809,137 @@ body.dark .hsd-titlebar { background: rgba(15,23,42,0.6); }
   font-size: 13px;
   color: #666;
 }
+  /* ── Responsive ── */
+@media (max-width: 900px) {
+  .hsd-hero {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+  }
+
+  .hsd-mockup-wrap {
+    display: none;
+  }
+
+  .hsd-counters {
+    gap: 10px;
+  }
+
+  .hsd-counter {
+    min-width: 80px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Feature strip */
+  .hsd-strip {
+    flex-wrap: wrap;
+  }
+
+  .hsd-strip-item {
+    flex: 1 1 calc(50% - 1px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hsd-strip-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .hsd-strip-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  /* Counter Fix */
+  .hsd-counters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hsd-counter {
+    min-width: 0;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hsd-counter strong {
+    font-size: 1.05rem;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .hsd-counter span {
+    font-size: 0.65rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* Buttons */
+  .hsd-cta-row .btn,
+  .hsd-cta-row .chip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Proof section */
+  .hsd-proof {
+    gap: 8px;
+    align-items: center;
+  }
+
+  .hsd-proof p {
+    font-size: 0.78rem;
+    line-height: 1.3;
+  }
+
+  /* Avatars */
+  .hsd-avatar {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Social Proof */
+.hsd-proof {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hsd-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.hsd-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.10);
+  margin-left: -8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.hsd-avatar:first-child {
+  margin-left: 0;
+}
+
+.hsd-avatar:hover {
+  transform: translateY(-3px) scale(1.05);
+  z-index: 10 !important;
+}
+
+.hsd-proof-text {
+  font-size: 13px;
+  color: #666;
+}
 `;
