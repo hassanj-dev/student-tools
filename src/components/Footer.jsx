@@ -40,13 +40,13 @@ const Footer = () => {
 
             {/* Socials */}
             <div className="footer-socials">
-              <a href="#" className="social-btn"><i className="fab fa-github"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-linkedin"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="social-btn"><i className="fab fa-discord"></i></a>
-            </div>
+  <a href="https://github.com/yourhandle" className="social-btn" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+  <a href="https://twitter.com/yourhandle" className="social-btn" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
+  <a href="https://instagram.com/yourhandle" className="social-btn" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com/in/yourhandle" className="social-btn" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+  <a href="https://youtube.com/@yourhandle" className="social-btn" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a>
+  <a href="https://discord.gg/yourhandle" className="social-btn" target="_blank" rel="noreferrer"><i className="fab fa-discord"></i></a>
+</div>
           </div>
 
           {/* TOOLS */}
