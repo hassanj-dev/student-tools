@@ -146,11 +146,24 @@ export default function Home() {
           <div className="hsd-copy">
             <span className="pill hsd-pill-anim">✦ All-in-one student toolkit</span>
 
-            <h1 className="hsd-headline">
-              Study smarter<br />
-              with one{" "}
-              <span className="hsd-gradient-text">clean dashboard.</span>
-            </h1>
+            
+
+<h1 className="hsd-headline">
+  Study smarter
+  <br />
+  with one{" "}
+  <span
+    className="hsd-gradient-text"
+    style={{
+      background:
+        "linear-gradient(135deg,#8b5cf6,#8b5cf6)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+    }}
+  >
+    clean dashboard.
+  </span>
+</h1>
 
             <p className="hsd-sub">
               Free, fast and easy-to-use tools to help you calculate,
