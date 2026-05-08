@@ -59,7 +59,7 @@ export default function ResumeBuilder() {
   const [accent, setAccent] = useState("#8b5cf6");
 
   const [form, setForm] = useState({
-    name: "Name",
+    name: "Your Name",
     title: "Frontend Developer",
     email: "you@gmail.com",
     phone: "+1 300 0000",
