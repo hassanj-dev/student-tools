@@ -1,28 +1,26 @@
-```html
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8507005092531453"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
   <!-- Verification -->
   <meta name='impact-site-verification' value='652e58cb-3f5c-4a34-b578-e5158eb0b475'>
   <meta name="google-adsense-account" content="ca-pub-8507005092531453">
 
-  <!-- === CORE === -->
+  <!-- CORE -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="x-dns-prefetch-control" content="on">
 
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <!-- === FONTS === -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -32,17 +30,24 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-  <!-- === PRELOAD LCP IMAGE === -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="/ads.css">
+
+  <!-- Preload Image -->
   <link rel="preload" as="image" href="/logo.webp">
 
-  <!-- === TITLE + SEO === -->
+  <!-- SEO -->
   <title>SparkDesk | Free GPA Calculator, Resume Builder & Student Tools</title>
 
-  <meta name="description" content="SparkDesk is a free all-in-one student toolkit with GPA calculator, resume builder, timetable planner, flashcards, and more." />
+  <meta name="description"
+    content="SparkDesk is a free all-in-one student toolkit with GPA calculator, resume builder, timetable planner, flashcards, and more." />
 
-  <meta name="keywords" content="GPA calculator, resume builder for students, timetable planner, study flashcards, student productivity tools, free student apps, SparkDesk, academic planner, student organizer" />
+  <meta name="keywords"
+    content="GPA calculator, resume builder for students, timetable planner, study flashcards, student productivity tools, free student apps, SparkDesk, academic planner, student organizer" />
 
   <meta name="author" content="SparkDesk" />
 
@@ -50,18 +55,20 @@
 
   <link rel="canonical" href="https://www.sparkdesk.online/" />
 
-  <!-- === FAVICON / PWA === -->
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="apple-touch-icon" href="/logo.webp" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#6d28d9" />
 
-  <!-- === OPEN GRAPH === -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.sparkdesk.online/" />
-  <meta property="og:title" content="SparkDesk | Free Student Tools — GPA, Resume, Flashcards & More" />
-  <meta property="og:description" content="SparkDesk is a free all-in-one student toolkit with GPA calculator, resume builder, timetable planner, flashcards, and more." />
+  <meta property="og:title"
+    content="SparkDesk | Free Student Tools — GPA, Resume, Flashcards & More" />
+  <meta property="og:description"
+    content="SparkDesk is a free all-in-one student toolkit with GPA calculator, resume builder, timetable planner, flashcards, and more." />
   <meta property="og:image" content="https://sparkdesk.online/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -69,14 +76,15 @@
   <meta property="og:site_name" content="SparkDesk" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- === TWITTER / X === -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@SparkDeskApp" />
   <meta name="twitter:title" content="SparkDesk | Free Student Tools" />
-  <meta name="twitter:description" content="GPA calculator, resume builder, timetable planner, flashcards & more — all free for students." />
+  <meta name="twitter:description"
+    content="GPA calculator, resume builder, timetable planner, flashcards & more — all free for students." />
   <meta name="twitter:image" content="https://sparkdesk.online/og-image.png" />
 
-  <!-- === STRUCTURED DATA === -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -107,101 +115,49 @@
   }
   </script>
 
-  <!-- === AD RESPONSIVE CSS === -->
-  <style>
-    .desktop-banner {
-      display: flex;
-      justify-content: center;
-      margin: 16px 0;
-    }
-
-    .mobile-banner {
-      display: none;
-      justify-content: center;
-      margin: 12px 0;
-    }
-
-    .sidebar-banner {
-      position: fixed;
-      right: 10px;
-      top: 120px;
-      z-index: 999;
-    }
-
-    @media (max-width: 1024px) {
-      .sidebar-banner {
-        display: none;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .desktop-banner {
-        display: none;
-      }
-
-      .mobile-banner {
-        display: flex;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- ===== Desktop Banner 728x90 ===== -->
+  <!-- Desktop Banner -->
   <div class="desktop-banner">
     <script>
       atOptions = {
-        'key' : '783f75c0bd451131db214f023307e42b',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
+        'key': '783f75c0bd451131db214f023307e42b',
+        'format': 'iframe',
+        'height': 90,
+        'width': 728,
+        'params': {}
       };
     </script>
 
     <script src="https://www.highperformanceformat.com/783f75c0bd451131db214f023307e42b/invoke.js"></script>
   </div>
 
-  <!-- ===== Mobile Banner 320x50 ===== -->
+  <!-- Mobile Banner -->
   <div class="mobile-banner">
     <script>
       atOptions = {
-        'key' : 'f0ed13c5201ed31ad75ec90f8c5cfc71',
-        'format' : 'iframe',
-        'height' : 50,
-        'width' : 320,
-        'params' : {}
+        'key': 'f0ed13c5201ed31ad75ec90f8c5cfc71',
+        'format': 'iframe',
+        'height': 50,
+        'width': 320,
+        'params': {}
       };
     </script>
 
     <script src="https://www.highperformanceformat.com/f0ed13c5201ed31ad75ec90f8c5cfc71/invoke.js"></script>
   </div>
 
-  <!-- ===== Sidebar Banner 160x600 ===== -->
-  <div class="sidebar-banner">
-    <script>
-      atOptions = {
-        'key' : '673e57e63f6d46dd5d7d216cbadc24ba',
-        'format' : 'iframe',
-        'height' : 600,
-        'width' : 160,
-        'params' : {}
-      };
-    </script>
-
-    <script src="https://www.highperformanceformat.com/673e57e63f6d46dd5d7d216cbadc24ba/invoke.js"></script>
-  </div>
-
-  <!-- ===== React Root ===== -->
+  <!-- React Root -->
   <div id="root"></div>
 
-  <!-- ===== Social Bar ===== -->
+  <!-- Social Bar -->
   <script src="https://pl29375118.profitablecpmratenetwork.com/3c/92/1c/3c921cca8377055da95fb56be9ea8586.js"></script>
 
-  <!-- ===== React Entry ===== -->
+  <!-- React Entry -->
   <script type="module" src="/src/main.jsx"></script>
 
 </body>
+
 </html>
-```
